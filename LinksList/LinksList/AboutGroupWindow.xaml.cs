@@ -1,3 +1,4 @@
+using System.Runtime.InteropServices.ObjectiveC;
 using System.Windows;
 using System.Windows.Controls;
 
@@ -31,6 +32,12 @@ public partial class AboutGroupWindow : Window
             linkTextBox.Height = 30;
             linkTextBox.VerticalContentAlignment = VerticalAlignment.Center;
             linkTextBox.IsReadOnly = true;
+            linkTextBox.MouseDoubleClick += (sender, args) =>
+            {
+                TextBox textBox = (TextBox)sender;
+                Clipboard.SetText(textBox.Text);
+                MessageBox.Show("Ссылка успешно скопирована!");
+            };
 
             stackPanel.Children.Add(linkTextBox);
         }
