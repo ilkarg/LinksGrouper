@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>WinExe</OutputType>
+        <TargetFramework>net6.0-windows</TargetFramework>
+        <Nullable>enable</Nullable>
+        <UseWPF>true</UseWPF>
+        <ApplicationIcon>icon.ico</ApplicationIcon>
+        <AssemblyName>LinksGrouper</AssemblyName>
+        <RootNamespace>LinksGrouper</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\..\NetLogger\NetLogger\NetLogger\NetLogger.csproj" />
+      <ProjectReference Include="..\..\NetLogger\NetLogger\NetLogger.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Newtonsoft.Json" Version="13.0.2-beta1" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="icon.ico" />
+      <Resource Include="icon.ico" />
+    </ItemGroup>
+
+</Project>

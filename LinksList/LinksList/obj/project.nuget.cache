@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "qTpKJi40jYVnwSllXLt41W+PN52kRVsHIRkXsomYp6XVOYNTh6mqKMWH3Ce+DnBlfaiuzBdeo6pRrtxuyvdYXA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\playc\\Desktop\\LinksList\\LinksList\\LinksList\\LinksList.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\playc\\.nuget\\packages\\newtonsoft.json\\13.0.2-beta1\\newtonsoft.json.13.0.2-beta1.nupkg.sha512"
+  ],
+  "logs": []
+}

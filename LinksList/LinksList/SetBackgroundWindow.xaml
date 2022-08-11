@@ -1,0 +1,34 @@
+<Window x:Class="LinksList.SetBackgroundWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:local="clr-namespace:LinksList"
+        mc:Ignorable="d"
+        Title="LinksGrouper - Установить фон" Height="450" Width="800" Icon="icon.ico">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="150"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        
+        <StackPanel Grid.Row="0" Grid.ColumnSpan="2" Orientation="Horizontal">
+            <TextBox Name="BackgroundNameTextBox" FontSize="20" Height="30" Width="600" Margin="30 0 30 0" IsReadOnly="True" Text="Изображение не выбрано"/>
+            <Button Width="100" Height="30" Click="ChooseBackgroundImageButtonClick">
+                <TextBlock FontSize="20">Обзор</TextBlock>
+            </Button>
+        </StackPanel>
+        
+        <Button Grid.Row="1" Grid.Column="0" VerticalAlignment="Bottom" Height="40" Width="120" Margin="30 0 5 15" Click="ConfirmBackgroundImageButtonClick">
+            <TextBlock FontSize="20">Установить</TextBlock>
+        </Button>
+        <Button Grid.Row="1" Grid.Column="1" VerticalAlignment="Bottom" Height="40" Width="120" Margin="5 0 30 15" Click="CancelButtonClick">
+            <TextBlock FontSize="20">Отмена</TextBlock>
+        </Button>
+    </Grid>
+</Window>
